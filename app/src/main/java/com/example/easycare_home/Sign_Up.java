@@ -18,7 +18,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 public class Sign_Up extends AppCompatActivity {
 
     EditText e1, e2, e3, e4;
-    Button b1;
+    Button b1, b2;
     DatabaseHelper db;
 
 
@@ -33,6 +33,7 @@ public class Sign_Up extends AppCompatActivity {
         e3 = (EditText) findViewById(R.id.password);
         e4 = (EditText) findViewById(R.id.cpassword);
         b1 = (Button) findViewById(R.id.register);
+        b2 = (Button) findViewById(R.id.login);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +57,6 @@ public class Sign_Up extends AppCompatActivity {
                 }
             }
         });
-
 //
 //    View view;
 //    public Sign_In() {
@@ -70,4 +70,35 @@ public class Sign_Up extends AppCompatActivity {
 //    }
 
     }
+    public void signIn(){
+        Intent intent = new Intent(this, Sign_In.class);
+        startActivity(intent);
+    }
+//    public void onClick(View v) {
+//        switch (v.getId()){
+//            case R.id.register:
+//                String email = e1.getText().toString().trim();
+//                String user = e2.getText().toString().trim();
+//                String pwd = e3.getText().toString().trim();
+//                String cnf_pwd = e4.getText().toString().trim();
+//
+//                if (pwd.equals(cnf_pwd)) {
+//                    long val = db.addUser(email, user, pwd);
+//                    if (val > 0){
+//                        Toast.makeText(Sign_Up.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
+//                    }
+//                    else {
+//                        Toast.makeText(Sign_Up.this, "Registration error", Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//                else {
+//                    Toast.makeText(getApplicationContext(), "Password does nots match", Toast.LENGTH_SHORT).show();
+//                }
+//                break;
+//            case R.id.login:
+//                signIn();
+//                break;
+//        }
+
+//    }
 }
