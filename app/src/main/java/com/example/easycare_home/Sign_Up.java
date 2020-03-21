@@ -28,11 +28,11 @@ public class Sign_Up extends AppCompatActivity {
         setContentView(R.layout.sign_up);
 
         db = new DatabaseHelper(this);
-        e1 = (EditText) findViewById(R.id.email);
-        e2 = (EditText) findViewById(R.id.username);
-        e3 = (EditText) findViewById(R.id.password);
-        e4 = (EditText) findViewById(R.id.cpassword);
-        b1 = (Button) findViewById(R.id.register);
+        e1 =  findViewById(R.id.email);
+        e2 =  findViewById(R.id.username);
+        e3 =  findViewById(R.id.password);
+        e4 =  findViewById(R.id.cpassword);
+        b1 =  findViewById(R.id.register);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class Sign_Up extends AppCompatActivity {
                     }
               }
                 else {
-                    Toast.makeText(getApplicationContext(), "Password does nots match", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Password does not match", Toast.LENGTH_SHORT).show();
                 }
             }
         });
