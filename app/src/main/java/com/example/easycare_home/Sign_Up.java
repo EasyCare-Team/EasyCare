@@ -57,17 +57,5 @@ public class Sign_Up extends AppCompatActivity {
             }
         });
 
-//
-//    View view;
-//    public Sign_In() {
-//    }
-//
-//    @Nullable
-//    @Override
-//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        view = inflater.inflate(R.layout.sign_in, container,false);
-//        return view;
-//    }
-
     }
 }
