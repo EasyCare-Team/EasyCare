@@ -36,19 +36,6 @@ public class Sign_In extends AppCompatActivity implements View.OnClickListener {
 
         b1.setOnClickListener(this);
 
-
-//
-//    View view;
-//    public Sign_In() {
-//    }
-//
-//    @Nullable
-//    @Override
-//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        view = inflater.inflate(R.layout.sign_in, container,false);
-//        return view;
-//    }
-
     }
     public void signUp(){
         Intent intent = new Intent(this, Sign_Up.class);

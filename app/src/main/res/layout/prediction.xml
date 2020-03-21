@@ -85,12 +85,12 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Measure"/>
+                android:text="Measure" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Report" />
+                android:text="Report"/>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"

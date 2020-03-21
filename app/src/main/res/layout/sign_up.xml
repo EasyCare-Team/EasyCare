@@ -71,11 +71,11 @@
 
     </LinearLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="180dp"
-        android:id="@+id/viewpager_id"/>
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="180dp"-->
+<!--        android:id="@+id/viewpager_id"/>-->
 
 
     <LinearLayout
@@ -144,7 +144,9 @@
             android:textColor="@color/white"
             android:textSize="20dp"
             android:background="@drawable/round"
-            android:id="@+id/register">
+            android:id="@+id/register"
+            android:clickable="true"
+            android:onClick="OnClickListener">
         </Button>
 
     </LinearLayout>
