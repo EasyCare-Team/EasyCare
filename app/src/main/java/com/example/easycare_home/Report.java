@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.ui.AppBarConfiguration;
 
-public class Report extends AppCompatActivity implements View.OnClickListener {
+public class Report extends AppCompatActivity {
 
     Button b1,b2,b3;
 
@@ -23,32 +23,63 @@ public class Report extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.report);
-
-
         b1 = (Button) findViewById(R.id.tabLayout_id);
+        b2 = (Button) findViewById(R.id.weekly);
+        b3 = (Button) findViewById(R.id.monthly);
 
-        b1.setOnClickListener(this);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.tabLayout_id:
+                        measure();
+                        predict();
+                        report();
+                        break;
+                }
+
+            }
+        });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                weekly();
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                monthly();
+            }
+        });
 
 
+    }
+    public void report(){
+        Intent intent = new Intent(this, Report.class);
+        startActivity(intent);
+    }
+    public void predict(){
+        Intent intent = new Intent(this, Prediction.class);
+        startActivity(intent);
     }
     public void measure(){
         Intent intent = new Intent(this, Measure.class);
         startActivity(intent);
     }
-
-    public void predict(){
-        Intent intent = new Intent(this, Prediction.class);
+    public void weekly(){
+        Intent intent = new Intent(this, WeeklyReport.class);
+        startActivity(intent);
+    }
+    public void monthly(){
+        Intent intent = new Intent(this, MonthlyReport.class);
         startActivity(intent);
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.tabLayout_id:
-                measure();
-                predict();
-                break;
-        }
-
-    }
 }

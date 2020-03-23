@@ -46,6 +46,7 @@ public class Sign_Up extends AppCompatActivity {
                     long val = db.addUser(email, user, pwd);
                     if (val > 0){
                         Toast.makeText(Sign_Up.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
+                        measure();
                     }
                     else {
                         Toast.makeText(Sign_Up.this, "Registration error", Toast.LENGTH_SHORT).show();
@@ -57,5 +58,9 @@ public class Sign_Up extends AppCompatActivity {
             }
         });
 
+    }
+    public void measure(){
+        Intent intent = new Intent(this, Measure.class);
+        startActivity(intent);
     }
 }
