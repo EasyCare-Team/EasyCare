@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Measure extends AppCompatActivity implements View.OnClickListener {
+public class Measure extends AppCompatActivity {
 
     Button b1;
 
@@ -19,9 +19,22 @@ public class Measure extends AppCompatActivity implements View.OnClickListener {
 
         b1 = findViewById(R.id.tabLayout_id);
 
-        b1.setOnClickListener(this);
+        b1.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
 
+                    case R.id.tabLayout_id:
+                        report();
+                        predict();
+                        measure();
+                        break;
+                }
+
+            }
+
+        });
     }
 
     public void report(){
@@ -32,16 +45,8 @@ public class Measure extends AppCompatActivity implements View.OnClickListener {
         Intent intent = new Intent(this, Prediction.class);
         startActivity(intent);
     }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-
-            case R.id.tabLayout_id:
-                report();
-                predict();
-                break;
-        }
-
+    public void measure(){
+        Intent intent = new Intent(this, Measure.class);
+        startActivity(intent);
     }
 }
