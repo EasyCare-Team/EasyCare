@@ -1,23 +1,45 @@
 package com.example.easycare_home;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+public class Prediction extends AppCompatActivity implements View.OnClickListener {
 
-public class Prediction extends Fragment {
-    View view;
-    public Prediction() {
+    Button b1;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.prediction);
+
+
+        b1 = findViewById(R.id.tabLayout_id);
+
+        b1.setOnClickListener(this);
+
+
+    }
+    public void measure(){
+        Intent intent = new Intent(this, Tab_viewer2.class);
+        startActivity(intent);
+    }
+    public void report(){
+        Intent intent = new Intent(this, Report.class);
+        startActivity(intent);
     }
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.prediction, container,false);
-        return view;
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tabLayout_id:
+                measure();
+                report();
+                break;
+
+        }
+
     }
 }

@@ -19,7 +19,19 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return fragmentList.get(position);
+        Fragment fragment = null;
+        switch (position){
+            case 0:
+                fragment = new Measure_Fragment();
+                break;
+            case 1:
+                fragment = new Report_Fragment();
+                break;
+            case 2:
+                fragment = new Prediction_Fragment();
+                break;
+        }
+        return fragment;
     }
 
     @Override
@@ -28,7 +40,16 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
     }
 
     public CharSequence getPageTitle (int position){
-        return FragmentListTitles.get(position);
+        switch (position){
+            case 0:
+                return "Tab_viewer2";
+            case 1:
+                return "Report";
+            case 2:
+                return "Prediction";
+
+        }
+        return null;
     }
 
     public void AddFragment (Fragment fragment, String Title){

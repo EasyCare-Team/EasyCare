@@ -18,14 +18,10 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity
-            android:name=".Measurement"
-            android:label="@string/app_name">
 
-        </activity>
 
         <activity
-            android:name=".Sign_Up">
+            android:name=".Tab_viewer">
 
             <intent-filter>
                 <category android:name="android.intent.category.MAIN"/>
@@ -36,24 +32,17 @@
             </intent-filter>
 
         </activity>
-
-        <activity
-            android:name=".Sign_In">
-
-            <intent-filter>
-                <category android:name="android.intent.category.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <action android:name="android.intent.action.DEFAULT" />
-
-
-            </intent-filter>
-
-        </activity>
-
 
 
         <activity
             android:name=".Prediction">
+
+
+
+        </activity>
+
+        <activity
+            android:name=".Tab_viewer2">
 
 
 

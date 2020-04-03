@@ -26,6 +26,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, 1);
     }
 
+
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("Create table registeruser (ID INTEGER PRIMARY KEY AUTOINCREMENT, email VARCHAR, username TEXT, password TEXT)");

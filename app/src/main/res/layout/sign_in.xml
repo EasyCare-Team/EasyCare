@@ -1,99 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="400dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp">
 <!--    android:gravity="center">-->
 
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="318dp"
-        android:layout_height="155dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/logo" />
-
-    <LinearLayout
-        android:layout_width="384dp"
-        android:layout_height="72dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginRight="10dp"
-        android:orientation="horizontal"
-        android:paddingRight="10dp">
-
-        <com.google.android.material.tabs.TabLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            app:tabTextColor="@color/green"
-            app:tabIndicatorColor="@color/green"
-            android:id="@+id/tabLayout_id">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sign In" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sign Up" />
-
-        </com.google.android.material.tabs.TabLayout>
 
 
-        <!--        <Button-->
-        <!--            android:layout_width="180dp"-->
-        <!--            android:layout_height="107dp"-->
-        <!--            android:layout_marginBottom="20dp"-->
-        <!--            android:text="Sign In"-->
-        <!--            android:textColor="@color/white"-->
-        <!--            android:textSize="40dp"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            android:textStyle="bold"-->
-        <!--            android:background="@drawable/round">-->
-
-        <!--        </Button>-->
-
-        <!--        <Button-->
-        <!--            android:layout_width="180dp"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            android:layout_marginBottom="20dp"-->
-        <!--            android:text="Sign Up"-->
-        <!--            android:textColor="@color/white"-->
-        <!--            android:textSize="40dp"-->
-        <!--            android:textStyle="bold"-->
-        <!--            android:background="@drawable/round">-->
-
-        <!--        </Button>-->
 
 
-    </LinearLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="180dp"
-        android:id="@+id/viewpager_id"/>
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="400dp"
-        android:layout_height="190dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginLeft="0dp"
-        app:srcCompat="@drawable/ic_person_foreground" />
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:layout_marginTop="470dp"
-        android:layout_marginLeft="50dp">
 
 <!--        <Button-->
 <!--            android:layout_width="wrap_content"-->
@@ -146,6 +67,5 @@
             android:id="@+id/login">
         </Button>
 
-    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

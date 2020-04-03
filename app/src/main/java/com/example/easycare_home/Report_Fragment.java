@@ -9,15 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Measure extends Fragment {
+public class Report_Fragment extends Fragment {
     View view;
-    public Measure() {
+    public Report_Fragment() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.measure, container,false);
+        view = inflater.inflate(R.layout.report, container,false);
         return view;
     }
 }
