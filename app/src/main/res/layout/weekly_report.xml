@@ -100,26 +100,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="180dp"
-        android:id="@+id/viewpager_id"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="180dp">
+        android:id="@+id/viewpager_id">
 
         <Button
+            android:id="@+id/monthly"
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="350dp"
             android:background="@drawable/round"
             android:text="Monthly"
-            android:id="@+id/monthly"
             android:textColor="@color/white"
             android:textSize="20dp">
 
         </Button>
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp">
 
     </LinearLayout>
 
