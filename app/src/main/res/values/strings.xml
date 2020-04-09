@@ -11,12 +11,19 @@
     <string name="menu_my_profile">My Profile</string>
     <string name="menu_about">About</string>
     <string name="menu_setting">Setting</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_in">Sign In</string>
-    <string name="prediction">Prediction</string>
-    <string name="report">Report</string>
+    <string name="todo">TODO</string>
+    <string name="measure_bmi">measure_bmi</string>
+    <string name="measure_bp">measure_bp</string>
+    <string name="measure_heart_rate">measure_heart_rate</string>
+    <string name="measure_temperature">measure_temperature</string>
     <string name="measure">Measure</string>
-
-
-
+    <string name="report">Report</string>
+    <string name="prediction">Prediction</string>
 </resources>
